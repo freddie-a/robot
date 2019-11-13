@@ -29,7 +29,7 @@ l2Btn = 312
 for event in gamepad.read_loop():
  #If buttons being pressed (gets rid of motion controls)
  if event.value == 1:
-  print (event.code)
+  print(event.code)
   #If triangle pressed, tell motors to go forwards until triangle is no longer held down
   if event.code == triangleBtn:
    while triangleBtn in gamepad.active_keys():
