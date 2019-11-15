@@ -51,7 +51,7 @@ You guys are important. Without you the robot would not do anything except sit t
 If you care about how the robot looks, you are officially a designer! Congratulations, your Great Aunt's hairdresser's gerbil is extremely proud.
 
 1. If you guys draw up any sketches or blueprints or whatever, pop them in here.
-2. You guys can make sub-folders but your main folder where all design stuff goes is in the general-design folder.
+2. You guys can make sub-folders but your main folder where all design stuff goes is the **general-design** folder.
 3. If you decide to scrap a design, please remove any photos/docs relating to the dead design because otherwise mere mortals like myself will get confused.
  <br />
 
