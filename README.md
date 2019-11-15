@@ -6,7 +6,7 @@ Long story short, any code you write needs to eventually end up in here to make 
 
 ### Who's Doing What?
 ---
-Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as things change:
+Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as we go:
 
 **Lava Palava (White Line One)**
 * Luke Amos (C'est moi)
