@@ -63,7 +63,8 @@ You guys are important. Without you the robot would not do anything except sit t
 1. Pop your code in the appropriate folder within the **challenges** folder (depending on what challenge you're working on).
 2. PLEASE try and comment as much as possible so other people know wassup.
 3. We want you guys to write in pseudocode for the moment because we're working on an API that we'll use to tie everything together. I knew psueocode would be useful eventually :).
-4. Don't forget to put the right extension in the name of the file (i.e python files are .py, arduino files are .ino)
+4. Don't forget to put the right extension in the name of the file (i.e python files are .py, arduino files are .ino).
+5. This is gonna sound boring but please read through your code before you commit to reduce the number of stupid mistakes that we all occasionally make. If you don't Freddie will deck you.
 
 #### API
 We're making our own API because evidently we're very bored and nerdy so why not. If you're involved in this, please put API-related code into the **api** folder.
