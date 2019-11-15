@@ -22,6 +22,7 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 
 **Temple Of Doom (Obstacle Course One)**
 
+
 ### General Stuff to Know
 ---
 This is for everyone (that's you!). 
