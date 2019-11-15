@@ -1,7 +1,7 @@
 # Robotics 2019-2020 Repository
 
 ### Hey Guys!
-Long story short, any code you write needs to eventually end up in here to make it easy to load different programs on the day of the competition. There's also some other bits and bobs I've put in here that I'll get to in a minute.  
+Long story short, anything you do that relates to the robot needs to eventually end up in here to make it easy to collaborate. There's  some cool bits and bobs I've put in here that I'll get to in a minute.  
  <br />
  
 ### Contents
