@@ -31,6 +31,11 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 **Zombie Apocalypse (Nerf Death One)**
 
 **Temple Of Doom (Obstacle Course One)**
+
+**API Team**
+
+**Bloggers** 
+
  <br />
 
 ### General Stuff to Know
