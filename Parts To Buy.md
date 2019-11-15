@@ -3,10 +3,10 @@
 ### Misc
 * Servos
 * Potentially a better battery
-* Non-Freaky wheels
+* Non-Freaky wheel x 4
 
 ### Lava Palava
-Line Sensor
+* Line Sensor x 3
 
 ### Eco Disaster
 
@@ -17,6 +17,6 @@ Line Sensor
 ### Pi Noon
 
 ### The Zombie Apocalypse
-* Nerf Gun
+* Nerf Gun x 1
 
 ### The Temple of Doom
