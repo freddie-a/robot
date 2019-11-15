@@ -22,18 +22,24 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 
 **Eco Disaster (Barrel Sorting One)**
 * Aidan Healy
+* Joshua Reynolds
 
 **Escape Route (Blind Maze One)**
+* Adam Ellingworth
 
 **Minesweeper (Light Up Squares One)**
+* Max Iyengar
+* Laura Hollister
 
 **Pi Noon (Awesome Balloon One)**
 * Harry O'Brien
 
 **Zombie Apocalypse (Nerf Death One)**
 * Freddie Askem
+* Emmanuel De Vidal
 
 **Temple Of Doom (Obstacle Course One)**
+* Lucas Kolb
 
 **API Team**
 * Freddie Askem
