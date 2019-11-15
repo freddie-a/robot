@@ -61,7 +61,7 @@ You guys are all about how the different wires plug in. If a sparky bit electroc
 
 1. When you're shopping for parts make total sure the specs are up to scratch (ie if we need a battery make sure it gives us enough power and lasts more than a gnat's lifespan).
 2. Same as with designers, if you guys have diagrams or whatever pop them in here but *pleaseeee* remember to delete old/rejected diagrams.
-3. You guys can make sub-folders but your main folder where all mechanicy stuff goes is in the general-mechanicy-bits folder.
+3. You guys can make sub-folders but your main folder where all mechanicy stuff goes is in the **general-mechanicy-bits** folder.
  <br />
 
 
