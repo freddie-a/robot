@@ -5,7 +5,7 @@ Long story short, any code you write needs to eventually end up in here to make 
  <br />
  
 ### Contents
-Who's Doing What? (#whos-doing-what)
+- [Who's Doing What?] (#whos-doing-what)
 
 ### Who's Doing What?
 ---
