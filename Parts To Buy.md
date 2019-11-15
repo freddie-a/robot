@@ -1,22 +1,22 @@
 # Parts Shopping List
 
-## Misc
-Servos
-Potentially a better battery
-Non-Freaky wheels
+### Misc
+* Servos
+* Potentially a better battery
+* Non-Freaky wheels
 
-## Lava Palava
+### Lava Palava
 Line Sensor
 
-## Eco Disaster
+### Eco Disaster
 
-## Escape Route
+### Escape Route
 
-## Minesweeper
+### Minesweeper
 
-## Pi Noon
+### Pi Noon
 
-## The Zombie Apocalypse
-Nerf Gun
+### The Zombie Apocalypse
+* Nerf Gun
 
-## The Temple of Doom
+### The Temple of Doom
