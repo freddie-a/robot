@@ -8,6 +8,7 @@ Long story short, anything you do that relates to the robot needs to eventually 
 1. [Who's Doing What?](#whos-doing-what)
 2. [General Stuff To Know](#general-stuff-to-know)
 3. [Programmers](#programmers)
+..* [API](#api)
 4. [Designers](#designers)
 5. [Mechanics](#mechanics)
 
@@ -52,11 +53,11 @@ You guys are important. Without you the robot would not do anything except sit t
 2. PLEASE try and comment as much as possible so other people know wassup.
 3. We want you guys to write in pseudocode for the moment because we're working on an API that we'll use to tie everything together. I knew psueocode would be useful eventually :).
 4. Don't forget to put the right extension in the name of the file (i.e python files are .py, arduino files are .ino)
- <br />
 
 #### API
 We're making our own API because evidently we're very bored and nerdy so why not. If you're involved in this, please put API-related code into the **api** folder.
-
+ <br />
+ 
 ### Designers
 ---
 If you care about how the robot looks, you are officially a designer! Congratulations, your Great Aunt's hairdresser's gerbil is extremely proud.
