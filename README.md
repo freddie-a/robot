@@ -2,6 +2,7 @@
 
 ### Hey Guys!
 Long story short, any code you write needs to eventually end up in here to make it easy to load different programs on the day of the competition. There's also some other bits and bobs I've put in here that I'll get to in a minute.
+ <br />
 
 ### Who's Doing What?
 ---
@@ -32,6 +33,7 @@ This is for everyone (that's you!).
 4. Try and come to every meeting from now on because we'll be talking about how far we've got in our groups.
 5. There is a Discord which hardly anyone is using at the mo. If you want to start a 4-bit voice channel and irritate everyone involved, Discord has you covered.
 6. I'm not gonna put a doc of what everyone's roles are (ie designer/mechanic) because that's effort. Instead I'm gonna trust you to know which role you'd like to do. If there's an excess of people in any one role, THEN we can have a chat about stuff.
+ <br />
 
 ### Programmers
 ---
