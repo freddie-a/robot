@@ -20,7 +20,7 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 
 **Zombie Apocalypse (Nerf Death One)**
 
-**Temple Of Doom (Obstacle Course One)**
+**Temple Of Doom (Obstacle Course One)**  
 
 
 ### General Stuff to Know
