@@ -28,6 +28,7 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 **Minesweeper (Light Up Squares One)**
 
 **Pi Noon (Awesome Balloon One)**
+* Harry O'Brien
 
 **Zombie Apocalypse (Nerf Death One)**
 * Freddie Askem
