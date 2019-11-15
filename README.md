@@ -5,7 +5,11 @@ Long story short, any code you write needs to eventually end up in here to make 
  <br />
  
 ### Contents
-- [Who's Doing What?](#whos-doing-what)
+1. [Who's Doing What?](#whos-doing-what)
+2. [General Stuff To Know](#general-stuff-to-know)
+3. [Programmers](#programmers)
+4. [Designers](#designers)
+5. [Mechanics](#mechanics)
 
 ### Who's Doing What?
 ---
