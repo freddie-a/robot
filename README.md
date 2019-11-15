@@ -34,6 +34,8 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 **Temple Of Doom (Obstacle Course One)**
 
 **API Team**
+* Freddie Askem
+* Luke Amos 
 
 **Bloggers** 
 
