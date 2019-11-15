@@ -8,7 +8,7 @@ Long story short, anything you do that relates to the robot needs to eventually 
 1. [Who's Doing What?](#whos-doing-what)
 2. [General Stuff To Know](#general-stuff-to-know)
 3. [Programmers](#programmers)
-..* [API](#api)
+  * [API](#api)
 4. [Designers](#designers)
 5. [Mechanics](#mechanics)
 
