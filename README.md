@@ -11,7 +11,8 @@ Long story short, anything you do that relates to the robot needs to eventually 
     * [API](#api)
 4. [Designers](#designers)
 5. [Mechanics](#mechanics)
-
+ <br />
+ 
 ### Who's Doing What?
 ---
 Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as we go:
