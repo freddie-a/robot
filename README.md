@@ -4,6 +4,7 @@
 Long story short, any code you write needs to eventually end up in here to make it easy to load different programs on the day of the competition. There's also some other bits and bobs I've put in here that I'll get to in a minute.
 
 ### Who's Doing What?
+---
 Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as things change:
 
 **Lava Palava (White Line One)**
@@ -21,7 +22,8 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 
 **Temple Of Doom (Obstacle Course One)**
 
-### General Stuff to Know?
+### General Stuff to Know
+---
 This is for everyone (that's you!). 
 1. If you don't know how GitHub works, it's fairly intuitive but Google has many wonderful how-to guides.
 2. Please try and keep everything as tidy as possible and try to name files and folders something kinda useful.
@@ -31,6 +33,7 @@ This is for everyone (that's you!).
 6. I'm not gonna put a doc of what everyone's roles are (ie designer/mechanic) because that's effort. Instead I'm gonna trust you to know which role you'd like to do. If there's an excess of people in any one role, THEN we can have a chat about stuff.
 
 ### Programmers
+---
 You guys are important. Without you the robot would not do anything except sit there and look fabulous. 
 
 1. Pop your code in the appropriate folder (depending on what challenge you're working on).
@@ -38,12 +41,14 @@ You guys are important. Without you the robot would not do anything except sit t
 3. Don't forget to put the right extension in the name of the file (i.e python files are .py, arduino files are .ino)
 
 ### Designers
+---
 If you care about how the robot looks, you are officially a designer! Congratulations, your mother is extremely proud.
 
 1. If you guys draw up any sketches or blueprints or whatever, pop them in here.
 2. If you decide to scrap a design, please remove any photos/docs relating to the dead design because otherwise mere mortals like myself will get confused.
 
 ### Mechanics
+---
 You guys are all about how the different wires plug in. If a sparky bit electrocutes someone on the day, you are to blame. No pressure!!!
 
 1. When you're shopping for parts make total sure the specs are up to scratch (ie if we need a battery make sure it gives us enough power and lasts more than a gnat's lifespan).
