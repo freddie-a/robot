@@ -38,7 +38,9 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 * Freddie Askem
 * Luke Amos 
 
-**Bloggers** 
+**Bloggers/Coders**
+* Elisabeth Franks
+* Laura Hollister
 
  <br />
 
