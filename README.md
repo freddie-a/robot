@@ -40,13 +40,15 @@ You guys are important. Without you the robot would not do anything except sit t
 1. Pop your code in the appropriate folder (depending on what challenge you're working on).
 2. PLEASE try and comment as much as possible so other people know wassup.
 3. Don't forget to put the right extension in the name of the file (i.e python files are .py, arduino files are .ino)
+ <br />
 
 ### Designers
 ---
-If you care about how the robot looks, you are officially a designer! Congratulations, your mother is extremely proud.
+If you care about how the robot looks, you are officially a designer! Congratulations, your Great Aunt's hairdresser's gerbil is extremely proud.
 
 1. If you guys draw up any sketches or blueprints or whatever, pop them in here.
 2. If you decide to scrap a design, please remove any photos/docs relating to the dead design because otherwise mere mortals like myself will get confused.
+ <br />
 
 ### Mechanics
 ---
@@ -54,6 +56,7 @@ You guys are all about how the different wires plug in. If a sparky bit electroc
 
 1. When you're shopping for parts make total sure the specs are up to scratch (ie if we need a battery make sure it gives us enough power and lasts more than a gnat's lifespan).
 2. Same as with designers, if you guys have diagrams or whatever pop them in here but *pleaseeee* remember to delete old/rejected diagrams.
+ <br />
 
 
 
