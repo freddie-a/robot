@@ -1,3 +1,7 @@
+markdown: kramdown
+auto_ids: false
+------------------
+
 # Robotics 2019-2020 Repository
 
 ### Hey Guys!
