@@ -6,7 +6,7 @@
 * Non-Freaky wheel x 4 - [Something Like This](https://amzn.to/377v34J)
 
 ### Lava Palava
-* Line Sensor x 3 - [Possible Seller](https://www.cricklewoodelectronics.com/Line-tracking-sensor-module-for-Arduino-KY-033.html)
+* KY-033 Line Sensor x 3 - [Possible Seller](https://www.cricklewoodelectronics.com/Line-tracking-sensor-module-for-Arduino-KY-033.html)
 
 ### Eco Disaster
 
