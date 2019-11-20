@@ -33,13 +33,15 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 
 **Pi Noon (Awesome Balloon One)**
 * Harry O'Brien
+* Shan Patel
+* Henry Davies
 
 **Zombie Apocalypse (Nerf Death One)**
-* Freddie Askem
+* Lucas Kolb
 * Emmanuel De Vidal
 
 **Temple Of Doom (Obstacle Course One)**
-* Lucas Kolb
+* Louis Mills (testing)
 
 **API Team**
 * Freddie Askem
