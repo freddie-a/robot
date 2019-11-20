@@ -9,7 +9,7 @@ s1 = serial.Serial(port, 9600)
 s1.flushInput()
 
 #Setting up gamepad as DS4 controller
-gamepad = InputDevice('/dev/input/event2')
+gamepad = InputDevice('/dev/input/event4')
 print('Initialising.')
 sleep(0.5)
 print('Initialising..')
