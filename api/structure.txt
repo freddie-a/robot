@@ -1,0 +1,76 @@
+NOTE: very incomplete
+
+Structure ideas
+
+Robot key parts:
+    motion:
+        movement in a direction:
+            formula to move in any direction, given in degrees?:
+                eg move 0 for forward, 180 for backwards, 90 for translate left etc
+            given a time / target distance:
+                !for either actual distance will vary depending on surface / slope
+                    may be able to use motor speeds, see below
+            braking:
+                how fast does it slow down from top speed (when a proper voltage battery is used)
+                    reverse voltage needed?
+                figure out when robot is at rest - zero measured motor speed
+            
+
+        rotation:
+            rotate a specific number of degrees
+            !implementation issues - must know turning rate (gyro) OR motor speed calcs
+        absolute position / speed:
+            hard
+            may be able to use measured motor speed * time travelled to caculate distance   
+                motor speed must be offset when translating (angle formula)
+                wheels can slip / low traction causing speed measured too high
+            for speed may be able to use motor hall feedback line - reasonably reliable
+            code for hall fb https://osoyoo.com/driver/encoder.zip
+            http://osoyoo.com/2019/11/14/how-to-test-motor-encoder-with-arduino/
+            i feel like we should archive these, company looks questionably stable
+
+    sensors:
+        dedicated (eg ultrasound)
+        monitoring (eg motor current, battery voltage)
+        attachments
+    extra hardware attachments / extensions (e,g nerf gun)
+
+possible api design
+
+asynchronicity - some challenges require doing multiple things at once
+    most funcs async but can basically be sed as sync without a problem if desired
+
+exported functions
+
+motion:
+    async move(direction=float (degrees), time=float)
+    or
+    async move(direction=float, distance=float)
+    
+    async stop(use_reverse=bool)
+
+    async rotate(angle=float)
+
+    motion sensing:
+        async depending on implementation - would rather have it non blocking and always poll
+        current_speed() - possible, can't see much use except internally
+
+sensors:
+    get_ultrasound_distance(sensor=str)
+
+    get_hardware_sensors() - return all available hardware sensors, maybe have filter arg
+
+    attachments:
+        remaining_bullets() - for this probably use a counter rather than an actual sensor
+
+extra / attachments:
+    async fire_bullet(elevation=float) - assuming vertical axis of freedom
+
+    async take_photo() - assuming we add a camera of some kind
+
+    async actuate_servo(servo=str, position=float) - lookup tables of some kind needed somewhere
+
+
+Arduino communication:
+    is (bi-directional) event based communication possible?
+    else polling is needed with most/all the processing on the pi
