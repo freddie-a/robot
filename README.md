@@ -17,30 +17,30 @@ Long story short, anything you do that relates to the robot needs to eventually 
 ---
 Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as we go:
 
-**Lava Palava (White Line One)**
+**Lava Palava (White Line One, has to be autonomous)**
 * Luke Amos (C'est moi)
 
-**Eco Disaster (Barrel Sorting One)**
+**Eco Disaster (Barrel Sorting One, extra points for autonomous)**
 * Aidan Healy
 * Joshua Reynolds
 
-**Escape Route (Blind Maze One)**
+**Escape Route (Blind Maze One, extra points for autonomous)**
 * Adam Ellingworth
 
-**Minesweeper (Light Up Squares One)**
+**Minesweeper (Light Up Squares One, extra points for autonomous)**
 * Max Iyengar
 * Laura Hollister
 
-**Pi Noon (Awesome Balloon One)**
+**Pi Noon (Awesome Balloon One, no extra points for autonomous)**
 * Harry O'Brien
 * Shan Patel
 * Henry Davies
 
-**Zombie Apocalypse (Nerf Death One)**
+**Zombie Apocalypse (Nerf Death One, no extra points for autonomous)**
 * Lucas Kolb
 * Emmanuel De Vidal
 
-**Temple Of Doom (Obstacle Course One)**
+**Temple Of Doom (Obstacle Course One, no extra points for autonomous)**
 * Louis Mills (testing)
 
 **API Team**
