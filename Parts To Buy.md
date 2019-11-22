@@ -21,6 +21,6 @@
 ### The Zombie Apocalypse
 * Nerf Gun x 1
     * What kind / specifications desired?
-    challenges/zombie-apocalypse/components.txt = progress
+    * challenges/zombie-apocalypse/components.txt = progress
 
 ### The Temple of Doom
