@@ -14,6 +14,7 @@ Robot key parts:
                 how fast does it slow down from top speed (when a proper voltage battery is used)
                     reverse voltage needed?
                 figure out when robot is at rest - zero measured motor speed
+                above may be irrelevant - motor controller provides braking funcitonality (untested)
             
 
         rotation:
@@ -32,6 +33,7 @@ Robot key parts:
     sensors:
         dedicated (eg ultrasound)
         monitoring (eg motor current, battery voltage)
+            dedicated hardware required
         attachments
     extra hardware attachments / extensions (e,g nerf gun)
 
@@ -74,3 +76,14 @@ extra / attachments:
 Arduino communication:
     is (bi-directional) event based communication possible?
     else polling is needed with most/all the processing on the pi
+        it seems to be possible using a millisecond counter
+        instead of using delays you can continue receiving more data and keep checking the running time
+        reads for pins are also non blocking
+        possible loop structure:
+            while true
+                if serial.available
+                    process_serial_data()
+                    send_serial_response()
+                check_motor_stop_timers() # only if doing timed runs
+                check_motor_hall()
+                
