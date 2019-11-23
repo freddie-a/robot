@@ -48,5 +48,9 @@ def move(DIRECTION, DISTANCE, SPEED = 100 ) : #speed as a %
 	brake()
 
 def brake():
+<<<<<<< HEAD
 	SERIAL_CONN.write("stop".encode())
+=======
+	SERIAL_CONN.write("stop#".encode())
+>>>>>>> 0a10add... Made it possible for words to actually be read from serial.
 	#Hopefully this will stop fairly briskly, we can test and see if it's enough
