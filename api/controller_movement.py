@@ -1,6 +1,5 @@
 """Controller interface for music"""
 import time
-
 import evdev
 import serial
 
@@ -26,22 +25,22 @@ def start():
         # If triangle pressed, tell motors to go forwards until triangle is no longer held down
         if event.code == BUTTONS["triangle"]:
             while BUTTONS["triangle"] in GAMEPAD.active_keys():
-                SERIAL_CONN.write("f".encode())
+                SERIAL_CONN.write(0)
                 time.sleep(0.05)
         # If X pressed, tell motors to go backwards until X is no longer held down
         elif event.code == BUTTONS["x"]:
             while BUTTONS["x"] in GAMEPAD.active_keys():
-                SERIAL_CONN.write(str.encode("b"))
+                SERIAL_CONN.write(180)
                 time.sleep(0.05)
         # If square pressed, tell motors to go left until square is no longer held down
         elif event.code == BUTTONS["square"]:
             while BUTTONS["square"] in GAMEPAD.active_keys():
-                SERIAL_CONN.write(str.encode("l"))
+                SERIAL_CONN.write(270)
                 time.sleep(0.05)
         # If circle pressed, tell motors to go right until circle is no longer held down
         elif event.code == BUTTONS["square"]:
             while BUTTONS["square"] in GAMEPAD.active_keys():
-                SERIAL_CONN.write(str.encode("r"))
+                SERIAL_CONN.write(90)
                 time.sleep(0.05)
 
 #Setting up GAMEPAD as DS4 controller
