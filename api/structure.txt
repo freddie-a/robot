@@ -7,9 +7,13 @@ Robot key parts:
         movement in a direction:
             formula to move in any direction, given in degrees?:
                 eg move 0 for forward, 180 for backwards, 90 for translate left etc
-            given a time / target distance:
-                !for either actual distance will vary depending on surface / slope
-                    may be able to use motor speeds, see below
+            given target distance:
+                use ultrasonic sensor to tell when distance has been reached:
+                	while distance_moved < desired distance:
+                		move_forward()
+                		check_distance()
+                	stop()
+
             braking:
                 how fast does it slow down from top speed (when a proper voltage battery is used)
                     reverse voltage needed?
