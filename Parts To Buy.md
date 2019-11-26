@@ -6,6 +6,7 @@
     * Can use a school power supply to charge
 * Non-Freaky wheel x 4 - [Something Like This](https://amzn.to/377v34J)
 * A new bit to connect the fancy wheel to the motor (to replace the broken one - see Shan)
+* Potentially a GPIO breaout board [Like This](http://mayhewlabs.com/products/pi-screw-terminal-breakout)
 
 ### Lava Palava
 * KY-033 Line Sensor x 3 - [Possible Seller](https://www.cricklewoodelectronics.com/Line-tracking-sensor-module-for-Arduino-KY-033.html)
