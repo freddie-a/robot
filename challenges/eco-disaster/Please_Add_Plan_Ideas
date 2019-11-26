@@ -4,3 +4,8 @@ Check every 5th pixel for range of colours (both red and green)
 If colour found, check surrounding area.
 Get size of each "barrel" and decide closest.
 Steer bot towards closest and manueveur into correct zone (g->b,r->y)
+
+Possible Camera:
+Unistorm Raspberry Pi 4 Camera Module 5MP Webcam Support 1080p 720p Video for Raspberry Pi 4 Raspberry Pi 3 Model B/B+
+by Zimix
+Learn more: https://www.amazon.co.uk/dp/B0747LRF6K/ref=cm_sw_em_r_mt_dp_U_crp3DbKV8GF6K
