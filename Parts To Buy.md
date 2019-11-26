@@ -1,7 +1,7 @@
 # Parts Shopping List
 
 ### Misc
-* Servos
+* Servos (2kg or better)
 * Potentially a better battery - maybe a 7.2/4v li-po, only need a few Ah, around £25
     * Can use a school power supply to charge
 * Non-Freaky wheel x 4 - [Something Like This](https://amzn.to/377v34J)
@@ -12,7 +12,7 @@
 * KY-033 Line Sensor x 3 - [Possible Seller](https://www.cricklewoodelectronics.com/Line-tracking-sensor-module-for-Arduino-KY-033.html)
 
 ### Eco Disaster
-
+   * Mechanical Arm to move barrels (3d print likely best solution)
 ### Escape Route
 
 ### Minesweeper
