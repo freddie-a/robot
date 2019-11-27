@@ -10,6 +10,7 @@
 
 ### Lava Palava
 * KY-033 Line Sensor x 3 - [Possible Seller](https://www.cricklewoodelectronics.com/Line-tracking-sensor-module-for-Arduino-KY-033.html)
+* **May not be needed - the PixyCam 2 can do line tracking**
 
 ### Eco Disaster
    * Mechanical Arm to move barrels (3d print likely best solution)
