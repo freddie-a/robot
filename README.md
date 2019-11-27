@@ -58,11 +58,12 @@ Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took
 This is for everyone (that's you!). 
 1. If you don't know how GitHub works, it's fairly intuitive but Google has many wonderful how-to guides.
 2. Please try and keep everything as tidy as possible and try to name files and folders something kinda useful.
-3. In the root of this repo there's a parts list document. Any time you guys realise you need a certain part buying, add to the doc and we'll relay it to big man Cullen.
-4. Try and come to every meeting from now on because we'll be talking about how far we've got in our groups.
-5. There is a Discord which hardly anyone is using at the mo. If you want to start a 4-bit voice channel and irritate everyone involved, Discord has you covered.
-6. I'm not gonna put a doc of what everyone's roles are (ie designer/mechanic) because that's effort. Instead I'm gonna trust you to know which role you'd like to do. If there's an excess of people in any one role, THEN we can have a chat about stuff.
-7. Please 'Watch' this repo just to make it easy for you all to find it again. You don't actually have to watch the repo on your screen 24/7, the computer will do that for you. Isn't technology marvellous.
+3. Please try to give all commits commit messages which say what you've changed (rather than "update code.py" which doesn't help anyone)
+4. In the root of this repo there's a parts list document. Any time you guys realise you need a certain part buying, add to the doc and we'll relay it to big man Cullen.
+5. Try and come to every meeting from now on because we'll be talking about how far we've got in our groups.
+6. There is a Discord which hardly anyone is using at the mo. If you want to start a 4-bit voice channel and irritate everyone involved, Discord has you covered.
+7. I'm not gonna put a doc of what everyone's roles are (ie designer/mechanic) because that's effort. Instead I'm gonna trust you to know which role you'd like to do. If there's an excess of people in any one role, THEN we can have a chat about stuff.
+8. Please 'Watch' this repo just to make it easy for you all to find it again. You don't actually have to watch the repo on your screen 24/7, the computer will do that for you. Isn't technology marvellous.
  <br />
 
 ### Programmers
