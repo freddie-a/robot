@@ -7,6 +7,10 @@ It's gonna be hard to get everything working together with everyone programming 
 
 Linting checks code and provides information on possible problems. This catches any common mistakes to make the code more reliable. We are going to use pylint; most editors should provide pylint integration (just google how to setup pylint with {editor})
 
+### Tabs or spaces?
+
+Spaces (4 of them)
+
 ### Code ownership
 
 With a shared project, everyone can change all the code so expect other people to tweak your things. That being said - don't be rude and rewrite someone else's code completely without telling them you want to
