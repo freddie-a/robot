@@ -3,5 +3,5 @@ Summary:
 3 attempts
 No. targets not specified
 5 shots MAX
-1 metre --> 1.5 metres away from targets
+1 metre --> 1.5 metres away from targets (including height)
 Nerf reccomended though balls provided.
