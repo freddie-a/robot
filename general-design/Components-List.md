@@ -1,4 +1,4 @@
-#HEY INIGO!
+# HEY INIGO!
 Your sexy friend has made this document so you know exactly what sorta shit goes on the board mkay?
 
 ### Note
