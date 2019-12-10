@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-#include <freddie.h>
 # Feel free to take only what is needed, and please forgive the
 # bugginess (It probably won't work) since I can't test this
 # aspect.
@@ -18,34 +17,22 @@ import numpy as np
 FORWARD = np.zeros(shape=(2, 2), dtype=youdecide)
 RIGHT = np.zeros(shape=(2, 2), dtype=youdecide)
 
-@please_convert_to_cpp
-def motor_settings_from_rotation(angle, forward_speed,
-                                 right_speed, translation_speed):
-    """Return an array of motor settings for translation at *angle*.
+# These two need to be be in correct proportion to each other
+# (i.e. the ratio forward_speed/right_speed is correct) but the
+# exact magnitudes do not matter.
+FORWARD_SPEED = 1.0
+RIGHT_SPEED = ??
 
-    Return an array of motor settings such that the robot will
-    translate at *angle*, at a speed determined by *translation_speed*
-    (please see below on this).
+def motor_settings_from_rotation(bearing):
+    """Return an array of motor settings for translation at *angle*.
 
     There are a few underlying assumptions which may be misplaced
     - as such, this code may not work as expected.
 
     Parameters:
-    - angle
-        - This is the desired angle of translation. It is measured
-        anticlockwise in radians about the robot, where 0c means right.
-    - forward_speed
-    - right_speed
-        - These two need to be be in correct proportion to each other
-        (i.e. the ratio forward_speed/right_speed is correct) but the
-        exact magnitudes do not matter.
-    - translation_speed
-        - Apologies, this is somewhat misleading. What I mean by this
-        is the desired speed as a proportion of the maximum speed in
-        the given direction (given by *angle*). It is intended to
-        be a float in the range 0-1, but a given value of, say, 0.5,
-        will result in different speeds in different directions.
-        It is just used as a multiplier at the end.
+    - bearing
+        - This is the desired bearing for translation, measured
+        in degrees clockwise around the origin.
     """
     # We will work out the desired mix of *FORWARD* and *RIGHT* based
     # on the intersection of two lines.
@@ -57,6 +44,12 @@ def motor_settings_from_rotation(angle, forward_speed,
     gradient = 0
     intercept = 0
 
+    # Calculate angle in radians anticlockwise around the origin
+    # with 0c to the right.
+    # We could just rework the logic instead, but I've converted
+    # since I'm not sure if we'll make future changes (depending on
+    # what we get from the joystick input).
+    angle = (90-bearing) * (math.pi/180)
     # Wrap angle around if greater than 360 degrees (2 pi).
     angle %= 2*math.pi
 
@@ -65,20 +58,20 @@ def motor_settings_from_rotation(angle, forward_speed,
     # you wanted to; one for gradient and one for y-intercept.
     if 0 <= angle <= (math.pi/2):
         # 0-90 degrees.
-        gradient = -(forward_speed/right_speed)
-        intercept = forward_speed
+        gradient = -(FORWARD_SPEED/RIGHT_SPEED)
+        intercept = FORWARD_SPEED
     elif (math.pi/2) < angle <= math.pi:
         # 90-180 degrees.
-        gradient = forward_speed/right_speed
-        intercept = forward_speed
+        gradient = FORWARD_SPEED/RIGHT_SPEED
+        intercept = FORWARD_SPEED
     elif math.pi < angle <= 3 * (math.pi/2):
         # 180-270 degrees.
-        gradient = -(forward_speed/right_speed)
-        intercept = -forward_speed
+        gradient = -(FORWARD_SPEED/RIGHT_SPEED)
+        intercept = -FORWARD_SPEED
     else:
         # Must be 270-360 degrees.
-        gradient = forward_speed/right_speed
-        intercept = -forward_speed
+        gradient = FORWARD_SPEED/RIGHT_SPEED
+        intercept = -FORWARD_SPEED
 
     # The second line is that of y = (tan(*angle*))*x.
     # Here, we solve the equations to find the coordinates
@@ -88,16 +81,14 @@ def motor_settings_from_rotation(angle, forward_speed,
     # Assuming the magnitudes of forward_speed and
     # right_speed are accurate, the magnitude of the resultant
     # speed may be found by the formula (x_intersect_coord ** 2 + y_intersect_coord ** 2) ** 0.5
-    x_multiplier = x_intersect_coord / right_speed
-    y_multiplier = y_intersect_coord / forward_speed
+    x_multiplier = x_intersect_coord / RIGHT_sPEED
+    y_multiplier = y_intersect_coord / FORWARD_sPEED
     # Set settings_arr.
     settings_arr = y_multiplier * FORWARD
     settings_arr += x_multiplier * RIGHT
     # At this point, settings_arr represents the motor settings
     # so as to achieve the maximum possible speed in the given
     # direction.
-    # We now adjust it based on the desired speed.
-    settings_arr *= translation_speed
 
     # Maybe we should clip to protect against values > 1 or < -1?
     # This shouldn't be necessary though, if everything's gone to plan.
