@@ -5,7 +5,8 @@ Long story short, anything you do that relates to the robot needs to eventually 
  <br />
  
 ### Contents
-1. [Who's Doing What?](#whos-doing-what)
+1. [To-Do List](#to-do-list)
+2. [Who's Doing What?](#whos-doing-what)
 2. [General Stuff To Know](#general-stuff-to-know)
 3. [Programmers](#programmers)
     * [API](#api)
@@ -13,6 +14,14 @@ Long story short, anything you do that relates to the robot needs to eventually 
 5. [Mechanics](#mechanics)
  <br />
  
+### To-Do List
+---
+- [ ] Sort out power to the Pi
+- [ ] Put faces on the site 
+- [ ] Mount gun
+- [ ] Buy the thingies
+- [ ] Mount PixyCam
+
 ### Who's Doing What?
 ---
 Laura did a fantastic whiteboard summary of this info. Unfortunately nobody took a photo of it, so we'll update this as we go:
