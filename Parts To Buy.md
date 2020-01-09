@@ -10,7 +10,6 @@
 
 ### Lava Palava
 * ~~KY-033 Line Sensor x 3~~
-* **May not be needed - the PixyCam 2 can do line tracking**
 
 ### Eco Disaster
 * Mechanical Arm to move barrels (3d print likely best solution)
