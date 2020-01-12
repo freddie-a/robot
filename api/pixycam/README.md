@@ -1,4 +1,4 @@
-#Pixy Cam shenanigans
+# Pixy Cam shenanigans
 
 I (Max) have tried (mostly succesfully) to connect a pixy cam to a rasberry pi. Here are my findings:
 
