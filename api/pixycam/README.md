@@ -14,4 +14,5 @@ These are both tell you everything that I have learned pretty much, but here it 
 ..* libusb-1.0-0-dev
 ..* g++
 ..* build_essential
+..* swig
 * Now, you can build the python thingymabob...
