@@ -23,7 +23,7 @@ These are both tell you everything that I have learned pretty much, but here it 
 ..* This will create a folder called python_demos in /pixy2/build/
 ..* Now you can run some of the python demos (get_blocks_python_demo.py seems to be most useful to us)
 
-That's pretty much it ¯\_(ツ)_/¯
+That's pretty much it ¯\\_(ツ)_/¯
 
 ## What to do now?
 
