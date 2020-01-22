@@ -6,22 +6,25 @@
 
 import math       # For trigonometry (tan).
 
-# For array operations, so it's python not pseudocode.
-import numpy as np
-
 # These are intended to be the arrays of motor settings needed
 # for forwards and rightwards translation respectively.
 # In order for motor_settings_from_rotation to work, the dtype
 # must be capable of non-integer values between 0 and 1 - so I'm
 # assuming a float of some size.
-FORWARD = np.zeros(shape=(2, 2), dtype=youdecide)
-RIGHT = np.zeros(shape=(2, 2), dtype=youdecide)
+
+
+MOTOR_VALUES = { # TODO find true vals
+    "fl": dict(forward=1, right=-1),
+    "bl": dict(forward=1, right=1),
+    "fr": dict(forward=1, right=1),
+    "br": dict(forward=1, right=-1)
+}
 
 # These two need to be be in correct proportion to each other
 # (i.e. the ratio forward_speed/right_speed is correct) but the
 # exact magnitudes do not matter.
 FORWARD_SPEED = 1.0
-RIGHT_SPEED = ??
+RIGHT_SPEED = 0.6 # TODO find real speed
 
 def motor_settings_from_rotation(bearing):
     """Return an array of motor settings for translation at *angle*.
@@ -81,17 +84,21 @@ def motor_settings_from_rotation(bearing):
     # Assuming the magnitudes of forward_speed and
     # right_speed are accurate, the magnitude of the resultant
     # speed may be found by the formula (x_intersect_coord ** 2 + y_intersect_coord ** 2) ** 0.5
-    x_multiplier = x_intersect_coord / RIGHT_sPEED
-    y_multiplier = y_intersect_coord / FORWARD_sPEED
+    x_multiplier = x_intersect_coord / RIGHT_SPEED
+    y_multiplier = y_intersect_coord / FORWARD_SPEED
     # Set settings_arr.
-    settings_arr = y_multiplier * FORWARD
-    settings_arr += x_multiplier * RIGHT
+    # settings_arr = y_multiplier * FORWARD
+    # settings_arr += x_multiplier * RIGHT
+    settings_arr = {}
+    for motor, settings in MOTOR_VALUES.items():
+        settings_arr[motor] = y_multiplier * settings["forward"] + x_multiplier * settings["right"]
+
     # At this point, settings_arr represents the motor settings
     # so as to achieve the maximum possible speed in the given
     # direction.
 
     # Maybe we should clip to protect against values > 1 or < -1?
     # This shouldn't be necessary though, if everything's gone to plan.
-    settings_arr = np.clip(settings_arr, -1, 1)
+    # settings_arr = np.clip(settings_arr, -1, 1)
 
     return settings_arr
