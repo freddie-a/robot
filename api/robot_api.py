@@ -216,10 +216,34 @@ async def get_speed():
 
 
 
-async def move(direction, distance=None, sensor=None, speed=100):
+async def move(direction=0, vector=None, distance=None, sensor=None, speed=100):
+    """Move in *direction* until *sensor* reads *distance*.
+
+    Either *direction* or *vector* can be provided; vector takes
+    precedence if both are given.
+
+    Parameters:
+    - direction
+        - Angle in degrees clockwise about robot, with
+        0 degrees straight ahead.
+    - vector
+        - A list in format [x, y]. x-axis is to the right
+        of the robot, and y-axis straight ahead.
+    - distance
+        - The distance reading at which the motion will stop.
+        Units are ____. If distance == None, then the motion will
+        continue forever until something else is called to change it.
+    - sensor
+        - The sensor to be used.
+    - speed
+        - The speed, in range 0-100, of motion.
+    """
     speed = speed * 2.55 # convert speed 0-255
     # calculate motor values
-    motor_matrix = angle_translation.motor_settings_from_rotation(direction)
+    if vector is None:
+        motor_matrix = angle_translation.motor_settings_from_rotation(direction)
+    else:
+        motor_matrix = angle_translation.motor_settings_from_vector(vector)
     motor_data = []
     # multiply values by speed and calculate motor mode
     for motor, value in motor_matrix.items():
@@ -240,6 +264,7 @@ async def move(direction, distance=None, sensor=None, speed=100):
         while await get_distance(sensor) > distance:
             await trio.sleep(0.1)
         await release_all()
+
 
 async def release_all():
     for motor in MOTORS.values():

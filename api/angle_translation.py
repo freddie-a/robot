@@ -91,8 +91,10 @@ def motor_settings_from_rotation(bearing):
     # settings_arr += x_multiplier * RIGHT
     settings_arr = {}
     for motor, settings in MOTOR_VALUES.items():
-        settings_arr[motor] = y_multiplier * settings["forward"] + x_multiplier * settings["right"]
-
+        settings_arr[motor] = (
+            y_multiplier * settings["forward"]
+            + x_multiplier * settings["right"]
+        )
     # At this point, settings_arr represents the motor settings
     # so as to achieve the maximum possible speed in the given
     # direction.
@@ -101,4 +103,31 @@ def motor_settings_from_rotation(bearing):
     # This shouldn't be necessary though, if everything's gone to plan.
     # settings_arr = np.clip(settings_arr, -1, 1)
 
+    return settings_arr
+
+def motor_settings_from_vector(vector):
+    """Return an array of motor settings for translation at *vector*.
+
+    There are a few underlying assumptions which may be misplaced
+    - as such, this code may not work as expected.
+
+    Parameters:
+    - vector
+        - A list in format [x, y]. x-axis is to the right
+        of the robot, and y-axis straight ahead.
+    """
+    # Make unit.
+    sum_squares = 0
+    for i in range(2):
+        sum_squares += vector[i] ** 2
+    multiplier = sum_squares ** 0.5
+    for i in range(2):
+        vector[i] /= multiplier
+    # Fill dictionary.
+    settings_arr = {}
+    for motor, settings in MOTOR_VALUES.items():
+        settings_arr[motor] = (
+            vector[1] * settings["forward"]
+            + vector[0] * settings["right"]
+        )
     return settings_arr
