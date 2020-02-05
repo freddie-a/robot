@@ -22,12 +22,16 @@ def print_largest(signature, blocks):
     block_array = block_array_interpretation.get_block_arrays(
         blocks, colours=[signature,]
     )
-    largest = block_array_interpretation.find_largest_block(block_array)
-    x, y = largest[0], largest[1]
-    width, height = largest[2], largest[3]
-    print("Largest block:")
-    print(f"\tx, y          : ({format_zeros(x)}, {format_zeros(y)})")
-    print(f"\twidth, height : ({format_zeros(width)}, {format_zeros(height)})")
+    if block_array is not None:
+        largest = block_array_interpretation.find_largest_block(block_array[0])
+        x, y = largest[0], largest[1]
+        width, height = largest[2], largest[3]
+        print("Largest block:")
+        print("\tx, y          : ")
+        print(format_zeros(x), format_zeros(y))
+        print("\twidth, height : ")
+        print(format_zeros(width), format_zeros(height))
+
 def main():
     """Run the test."""
     pixy.init()
@@ -35,6 +39,6 @@ def main():
     requested_signature = int(
         input("What colour signature do you want to use?: ")
     )
-    blocks = BlockArray(100)
+    blocks = pixy.BlockArray(100)
     while True:
-        print_largest(signature, blocks)
+        print_largest(requested_signature, blocks)

@@ -6,7 +6,6 @@ Date: 31.1.20
 
 """
 
-import numpy as np
 import pixy
 
 COLOUR_SIGNATURES = {       # TODO determine actual ones.
@@ -53,24 +52,23 @@ def get_block_arrays(block_array, colours=None, max_blocks=100):
     block_lists = [[]] * 10
     some_of_interest = False
     for i in range(no_blocks):
-        sig = blocks[i].m_signature
+        sig = block_array[i].m_signature
         if sig_mask[sig]:
             some_of_interest = True
             block_lists[sig].append([
-                    blocks[i].m_x,
-                    blocks[i].m_y,
-                    blocks[i].m_width,
-                    blocks[i].m_height,
-                    blocks[i].m_index,
-                    blocks[i].m_age
-                ]
-            )
+                block_array[i].m_x,
+                block_array[i].m_y,
+                block_array[i].m_width,
+                block_array[i].m_height,
+                block_array[i].m_index,
+                block_array[i].m_age
+            ])
     if not some_of_interest:
         # Nothing of interest found.
         return None
     to_return = []
     for colour in colours:
-        to_return.append[block_lists[colour]]
+        to_return.append(block_lists[colour])
     return to_return
 
 def find_largest_block(array):
