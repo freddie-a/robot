@@ -18,7 +18,7 @@ BUTTONS = {
 
 async def main():
     """Runs serial and controller read loop"""
-    with trio.open_nursery() as nursery:
+    async with trio.open_nursery() as nursery:
         nursery.start_soon(robot_api.SERIAL_CONN.core_loop)
         nursery.start_soon(controller_read_loop)
 
