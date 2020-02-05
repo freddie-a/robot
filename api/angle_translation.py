@@ -116,11 +116,9 @@ def motor_settings_from_vector(vector):
         - A list in format [x, y]. x-axis is to the right
         of the robot, and y-axis straight ahead.
     """
-    # Make unit.
-    sum_squares = 0
-    for i in range(2):
-        sum_squares += vector[i] ** 2
-    multiplier = sum_squares ** 0.5
+    right_multiplier = RIGHT_SPEED / FORWARD_SPEED
+    # Ensure direction kept while all values kept <= 1.
+    multiplier = right_multiplier*vector[0] + vector[1]
     for i in range(2):
         vector[i] /= multiplier
     # Fill dictionary.
