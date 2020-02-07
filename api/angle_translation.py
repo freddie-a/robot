@@ -118,9 +118,10 @@ def motor_settings_from_vector(vector):
     """
     right_multiplier = RIGHT_SPEED / FORWARD_SPEED
     # Ensure direction kept while all values kept <= 1.
-    multiplier = right_multiplier*vector[0] + vector[1]
+    multiplier = abs(right_multiple*vector[1]) + abs(vector[1])
     for i in range(2):
         vector[i] /= multiplier
+    vector[0] /= right_multiplier
     # Fill dictionary.
     settings_arr = {}
     for motor, settings in MOTOR_VALUES.items():
