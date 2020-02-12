@@ -26,7 +26,7 @@ def get_block_arrays(block_array, colours=None, max_blocks=100):
 
     Each item in each array takes the form:
         [x, y, width, height, index, age]
-    
+
     Parameters:
         - block_array
             This is the BlockArray() needed to collect the blocks.
