@@ -1,4 +1,5 @@
-NOTE: very incomplete
+NOTE: OUTDATED
+
 
 Structure ideas
 
@@ -90,4 +91,17 @@ Arduino communication:
                     send_serial_response()
                 check_motor_stop_timers() # only if doing timed runs
                 check_motor_hall()
-                
+
+    communication format:
+        2 bytes: pi > arduino
+            operation
+            data
+        n bytes: arduino > pi (pi has to handle)
+            operation
+            data => n
+
+0 - motor 1 forward
+4 - motor 1 backward
+(8 - motor 1 brake)
+12 - motor 1 release
+16 - next free
