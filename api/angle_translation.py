@@ -52,28 +52,28 @@ def motor_settings_from_rotation(bearing):
     # We could just rework the logic instead, but I've converted
     # since I'm not sure if we'll make future changes (depending on
     # what we get from the joystick input).
-    angle = (90-bearing) * (math.pi/180)
+    angle = (90 - bearing) * (math.pi / 180)
     # Wrap angle around if greater than 360 degrees (2 pi).
-    angle %= 2*math.pi
+    angle %= 2 * math.pi
 
     # Assign gradient and intercept their correct values.
     # You could probably split this out into two if-elses if
     # you wanted to; one for gradient and one for y-intercept.
-    if 0 <= angle <= (math.pi/2):
+    if 0 <= angle <= (math.pi / 2):
         # 0-90 degrees.
-        gradient = -(FORWARD_SPEED/RIGHT_SPEED)
+        gradient = -(FORWARD_SPEED / RIGHT_SPEED)
         intercept = FORWARD_SPEED
-    elif (math.pi/2) < angle <= math.pi:
+    elif (math.pi / 2) < angle <= math.pi:
         # 90-180 degrees.
-        gradient = FORWARD_SPEED/RIGHT_SPEED
+        gradient = FORWARD_SPEED / RIGHT_SPEED
         intercept = FORWARD_SPEED
-    elif math.pi < angle <= 3 * (math.pi/2):
+    elif math.pi < angle <= 3 * (math.pi / 2):
         # 180-270 degrees.
-        gradient = -(FORWARD_SPEED/RIGHT_SPEED)
+        gradient = -(FORWARD_SPEED / RIGHT_SPEED)
         intercept = -FORWARD_SPEED
     else:
         # Must be 270-360 degrees.
-        gradient = FORWARD_SPEED/RIGHT_SPEED
+        gradient = FORWARD_SPEED / RIGHT_SPEED
         intercept = -FORWARD_SPEED
 
     # The second line is that of y = (tan(*angle*))*x.
@@ -118,7 +118,7 @@ def motor_settings_from_vector(vector):
     """
     right_multiplier = RIGHT_SPEED / FORWARD_SPEED
     # Ensure direction kept while all values kept <= 1.
-    multiplier = abs(right_multiple*vector[1]) + abs(vector[1])
+    multiplier = abs(right_multiplier*vector[1]) + abs(vector[1])
     for i in range(2):
         vector[i] /= multiplier
     vector[0] /= right_multiplier
