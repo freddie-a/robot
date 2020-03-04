@@ -6,9 +6,8 @@ No. targets not specified
 1 metre --> 1.5 metres away from targets (including height)
 Nerf reccomended though balls provided.
 
-Gun:
-Semi-auto optimal
+Protrude wood from underneath the nerf gun so the mounting does not interfere with the motors of the gun.
+Attatch hinge (or other rotational mechanism) to the bottom of the nerf gun as a point of rotation.
+Attatch rope (hoop or glue) to front of gun
+Setup servo behind gun to change height of aiming.
 
-
-
-Imagine being ginger
