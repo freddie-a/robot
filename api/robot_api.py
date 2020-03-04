@@ -76,6 +76,7 @@ class AsyncSerialConnection:
                 self.conn.write(bytes([SERIAL_INIT]))
                 time.sleep(0.2)
                 self.conn.reset_input_buffer()
+                break
         LOGGER.info("Connected successfully")
 
     async def core_loop(self):
@@ -335,5 +336,5 @@ async def set_controller_mode(enabled=False):
 
 
 logging_setup.add_handlers()
-SERIAL_CONN = AsyncSerialConnection(PORT, BAUD)
 LOGGER = logging.getLogger("robot_api")
+SERIAL_CONN = AsyncSerialConnection(PORT, BAUD)
