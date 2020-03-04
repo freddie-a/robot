@@ -16,5 +16,6 @@ def create_sublogger(level, path=None):
 def add_handlers():
     """Add root logger handlers"""
     root_logger = logging.getLogger()
+    root_logger.setLevel(logging.DEBUG)
     root_logger.addHandler(create_sublogger(logging.DEBUG, "robot.log"))
     root_logger.addHandler(create_sublogger(logging.DEBUG))
