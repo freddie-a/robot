@@ -1,0 +1,6 @@
+arduino_build/
+switch_pc.py
+.vscode/
+__pycache__/
+*.old
+*.log
