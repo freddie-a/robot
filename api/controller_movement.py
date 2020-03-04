@@ -29,7 +29,7 @@ async def controller_read_loop():
     """Controller analog stick read loop"""
     await trio.sleep(2)
     LOGGER.debug("Ready")
-    robot_api.set_controller_mode(enabled=True)
+    await robot_api.set_controller_mode(enabled=True)
     fileno = GAMEPAD.fileno()
     cur_x = 0
     cur_y = 0
