@@ -5,6 +5,7 @@
 # aspect.
 
 import math       # For trigonometry (tan).
+import random
 
 # These are intended to be the arrays of motor settings needed
 # for forwards and rightwards translation respectively.
@@ -116,12 +117,12 @@ def motor_settings_from_vector(vector):
         - A list in format [x, y]. x-axis is to the right
         of the robot, and y-axis straight ahead.
     """
-    right_multiplier = RIGHT_SPEED / FORWARD_SPEED
+    right_multiplier = FORWARD_SPEED / RIGHT_SPEED
     # Ensure direction kept while all values kept <= 1.
-    multiplier = abs(right_multiplier*vector[1]) + abs(vector[1])
+    multiplier = abs(right_multiplier*vector[1]) + abs(vector[0])
     for i in range(2):
         vector[i] /= multiplier
-    vector[0] /= right_multiplier
+    vector[1] *= right_multiplier
     # Fill dictionary.
     settings_arr = {}
     for motor, settings in MOTOR_VALUES.items():
