@@ -24,11 +24,12 @@ ULTRASONIC_SENSORS = dict(
     left=0x04
 )
 
+#Looking Front-On (FRONT IS FACING YOU)
 MOTORS = {
-    "fl": 0x00,
-    "bl": 0x01,
-    "fr": 0x02,
-    "br": 0x03
+    "fr": 0x00,
+    "fl": 0x01,
+    "br": 0x02,
+    "bl": 0x03
 }
 MOTOR_ACTIONS = {
     "forward": 0x00,
