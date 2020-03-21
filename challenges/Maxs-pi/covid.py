@@ -1,0 +1,7 @@
+while 1:
+    print("SCHOOL IS NON-ESSENTIAL TRAVEL")
+    print("SECONDARY SCHOOL PUPILS DO NOT REQUIRE CHILDCARE")
+    print("TAKE BACK THE MEANS OF PRODUCTION")
+    print("SCHOOL IS A MASS GATHERING")
+    import time
+    time.sleep(1)
