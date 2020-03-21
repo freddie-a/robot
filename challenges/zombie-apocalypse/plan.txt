@@ -11,3 +11,4 @@ Attatch hinge (or other rotational mechanism) to the bottom of the nerf gun as a
 Attatch rope (hoop or glue) to front of gun
 Setup servo behind gun to change height of aiming.
 
+
